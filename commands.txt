@@ -12,4 +12,9 @@ az login
 
 ..\bin\terraform plan out="dev.tfplan"
 
+..\bin\terraform apply
+
+..\bin\terraform apply -var="account_replication_type=GRS" -var="location=CentralUS"
+..\bin\terraform apply -var-file="dev.tfvars" -auto-approve
+
 ..\bin\terraform destroy
