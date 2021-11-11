@@ -1,0 +1,15 @@
+az login
+
+..\bin\terraform init
+
+..\bin\terraform fmt
+
+..\bin\terraform validate
+
+..\bin\terraform workspace new dev
+
+..\bin\terraform workspace select dev
+
+..\bin\terraform plan out="dev.tfplan"
+
+..\bin\terraform destroy
