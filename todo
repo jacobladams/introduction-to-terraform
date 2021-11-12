@@ -1,0 +1,14 @@
+demos
+    
+    backend/Remote state
+    workspaces
+    more complex example using depencies (app service, database, storage account, networking)
+    
+    Modules
+    
+    state
+    ci/cd
+resource slide
+    microsoft learn?
+    terraform site
+    pluralsight

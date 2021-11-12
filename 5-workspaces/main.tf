@@ -24,7 +24,7 @@ resource "random_id" "random_suffix" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "rg-terraform-demo-${random_id.random_suffix.hex}"
+  name     = "rg-terraform-demo-${terraform.workspace}-${random_id.random_suffix.hex}"
   location = var.location
 }
 
